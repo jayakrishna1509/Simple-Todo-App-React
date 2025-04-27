@@ -1,0 +1,145 @@
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center the title */
+  max-width: 800px;
+  margin-top: 100px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar-title {
+  color: #f1356d;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.home h2 {
+  color: #f1356d;
+  margin-bottom: 20px;
+}
+
+.add-todo {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.add-todo input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.add-todo button {
+  padding: 10px 20px;
+  background: #f1356d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background: #d12e5e;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.todo-text {
+  text-align: left;
+}
+
+.todo-item.completed {
+  opacity: 0.7;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+}
+
+.todo-actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-actions button:nth-child(1) {
+  background: #4caf50;
+  color: white;
+}
+
+.todo-actions button:nth-child(2) {
+  background: #2196f3;
+  color: white;
+}
+
+.todo-actions button:nth-child(3) {
+  background: #f44336;
+  color: white;
+}
+
+.todo-item form {
+  display: flex;
+  flex: 1;
+}
+
+.todo-item form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.todo-item form button {
+  padding: 8px 15px;
+  background: #f1356d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Clear All Button */
+.clear-all-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  background: #4caf50; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.clear-all-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
